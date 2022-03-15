@@ -10,6 +10,9 @@ const PokemonListWithAxios = () => {
             .then((response) => {
                 setPokemonList(response.data.results)
             })
+            .catch((err)=>{
+                console.log(err)
+            })
     }
 
     return (
